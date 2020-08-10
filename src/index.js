@@ -3,6 +3,10 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
+if (process.env.NODE_ENV !== 'production') {
+	console.log('Looks like we are in development mode!');
+}
+
 function main() {
 	var renderer = new THREE.WebGLRenderer({
 		alpha: true,
