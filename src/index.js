@@ -13,7 +13,7 @@ function main() {
 		antialias: true,
 	});
 
-	renderer.setSize(window.innerWidth / 1.5, window.innerHeight / 1.5);
+	renderer.setSize(window.innerWidth, window.innerHeight);
 	renderer.shadowMap.enabled = true;
 	document.body.appendChild(renderer.domElement);
 
